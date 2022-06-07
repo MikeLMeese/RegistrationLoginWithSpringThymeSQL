@@ -1,0 +1,10 @@
+package win.spring.registrationloginspringbootsecuritythymeleafhibernatemysql.service;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import win.spring.registrationloginspringbootsecuritythymeleafhibernatemysql.model.User;
+import win.spring.registrationloginspringbootsecuritythymeleafhibernatemysql.web.dto.UserRegistrationDto;
+
+public interface UserService extends UserDetailsService{
+	User save(UserRegistrationDto registrationDto);
+}
